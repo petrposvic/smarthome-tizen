@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width,user-scalable=no">
+	<title>List</title>
+	<link rel="stylesheet" href="lib/tau/wearable/theme/default/tau.min.css">
+	<link rel="stylesheet" href="lib/tau/wearable/theme/default/tau.circle.min.css" media="all and (-tizen-geometric-shape: circle)">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="ui-page ui-page-active" id="main">
+		<header class="ui-header">
+			<h2 class="ui-title">Smart Home</h2>
+		</header>
+		<div class="ui-content">
+			<ul class="ui-listview"></ul>
+		</div>
+	</div>
+
+	<div class="ui-page" id="detail">
+		<header class="ui-header">
+			<h2 class="ui-title" id="title"></h2>
+		</header>
+		<div class="ui-content">
+			<ul class="ui-listview"></ul>
+		</div>
+	</div>
+
+	<div id="popupSuccess" class="ui-popup ui-popup-toast ui-popup-toast-graphic">
+		<div class="ui-popup-content">
+			<div class="ui-popup-toast-icon ui-popup-toast-check-icon btn-icon-toast-check">check</div>
+			Success
+		</div>
+	</div>
+
+	<div id="popupFailure" class="ui-popup ui-popup-toast toast-text-only">
+		<div class="ui-popup-content">
+			Failure<br>
+			:(
+		</div>
+	</div>
+
+	<script type="text/javascript" src="lib/tau/wearable/js/tau.min.js"></script>
+	<script type="text/javascript" src="js/circle-helper.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+	<script type="text/javascript" src="js/lowBatteryCheck.js"></script>
+</body>
+</html>

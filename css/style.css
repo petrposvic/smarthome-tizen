@@ -1,0 +1,31 @@
+.ui-listview li .li-text-sub {
+	display: block;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	line-height: 32px;
+}
+
+.ui-listview li.li-has-radio.disabled,
+.ui-listview li.li-has-radio.disabled > * {
+	color: rgb(51, 51, 51);
+}
+
+.ui-listview li {
+	position: relative;
+}
+
+.ui-listview li input[type="radio"] {
+	position: absolute;
+	right: 30px;
+	top: 50%;
+	-webkit-transform: translate3d(0, -50%, 0);
+}
+
+.ui-listview li.li-has-radio label {
+	display: block;
+	padding: 31.5px 94px 31.5px 40px;
+	margin-top: -30px;
+	margin-bottom: -21px;
+	margin-left: -38px;
+	margin-right: -8px;
+}
